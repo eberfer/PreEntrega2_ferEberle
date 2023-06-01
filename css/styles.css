@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #FFF7ED;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(7, 7, 7);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.125rem;
+    background-image: url(../img/pexels-photo-3721941.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF7ED;
+}
+
+svg,
+img {
+    width: 100%; 
+}
+/* Comienzo de CCS NAVIGATION BAR */
+
+.navBar {
+    margin: 10px;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.navBar a {
+    font-family: 'Gruppo', cursive;
+    display: flex;
+    height: 100%;
+}
+
+.navList li a{
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 0px 1em;
+    margin: auto;
+    letter-spacing: 1px;
+    transition: all 0.2s ease 0s;
+}
+
+.navList li a:hover {
+    color: #FBBA72;
+    text-decoration: underline;
+}
+
+.listContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 100%;
+}
+
+/* Fin de CSS NAVITGATION BAR */ 
+
+/* Comienzo MAIN SECTION */
+
+.mainSection {
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.mainText {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-family: 'Gruppo', cursive;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.button {
+    background-color: rgba(24, 24, 24, 0.9);
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+}
+
+.button:hover {
+    background-color: #FBBA72;
+    color: rgb(24, 24, 24);    
+    border: 1px solid #FBBA72;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+/* Fin de MAIN SECTION - Comienzo MIDDLE SECTION */
+
+.sectionContainer {
+    background-image: linear-gradient(rgba(24, 24, 24, 0.3), rgb(12, 12, 12));
+    border: 0.5px solid rgba(255, 247, 237, 0.5);
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px; 
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleText {
+    margin: 1em 0em;
+    font-size: 2.5rem;
+    font-family: 'Gruppo', cursive;
+    letter-spacing: 2px;
+}
+
+.textParrafo {
+    line-height: 3em;
+    letter-spacing: 1px;
+}
+
+.footerContainer {
+    border-top: 0.5px solid rgba(255, 247, 237, 0.5);
+    padding: 0.5em;
+    background-color: rgb(12, 12, 12);
+}
+
+.footerLinks {
+    padding: auto;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+.navLinks li a{
+    color: #FBBA72;
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+    color: #FFF7ED;
+    text-decoration: underline;
+}
+
+.navLinks li {
+    margin: 20px
+} 
+
+.footerIcons a img {
+    height: 2rem;
+    margin: 10px;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Section Consultas */
+
+.mainContainer {
+    padding: 3em 0;
+}
+
+.contenedorConsultas {
+    justify-content: center;
+    align-items: center;
+}
+
+.menuConsultas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gruppo', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 60vh;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.menuConsultas label {
+    margin-top: 10px;
+}
+
+textarea,
+.menuConsultas input {
+    padding: 0.5em ;
+    background-color: rgba(24, 24, 24, 0.3);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    border: 0.5px solid rgba(255, 247, 237, 0.5); 
+    /* color: rgb(12, 12, 12); */
+    width: 80%;
+    border-radius: 5px;
+    transition: all 0.1s ease 0s;
+}
+
+textarea,
+.menuConsultas input:hover {
+    border: rgb(255, 247, 237) 1px solid;
+}
+
+textarea,
+.menuConsultas input:focus {
+    outline: none;
+    border: #FBBA72 1px solid;
+}
